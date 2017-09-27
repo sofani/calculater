@@ -125,7 +125,7 @@ $(document).ready(function() {
 
     $('#mult').on('click', function () {
         empty();
-        result.push('x');
+        result.push('*');
         $('#input').html(result);
         calculation();
     });
@@ -156,7 +156,7 @@ $(document).ready(function() {
                     f = parseFloat(d) - parseFloat(e);
                 }
 
-                if (element == "x") {
+                if (element == "*") {
                     f = parseFloat(d) * parseFloat(e);
                 }
 

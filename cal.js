@@ -7,53 +7,121 @@ $(document).ready(function() {
     $('#clearAll').on('click', function () {
         result.splice(0);
        $('#input').empty();
+        $('#plus').removeClass('red');
        
     });
     $('#1').on('click', function () {
          result.push(1);
 
          $('#input').html(result);
+         $('#plus').removeClass('red');
+         $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
+
      });
 
      $('#2').on('click', function () {
          result.push(2);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#3').on('click', function () {
          result.push(3);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#4').on('click', function () {
          result.push(4);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#5').on('click', function () {
          result.push(5);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#6').on('click', function () {
          result.push(6);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#7').on('click', function () {
          result.push(7);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#8').on('click', function () {
          result.push(8);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#9').on('click', function () {
          result.push(9);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#0').on('click', function () {
          result.push(0);
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
      $('#dot').on('click', function () {
          result.push('.');
          $('#input').html(result);
+          $('#plus').removeClass('red');
+            $('#minus').removeClass('red');
+         $('#divide').removeClass('red');
+         $('#mult').removeClass('red');
+         $('#percentage').removeClass('red');
+         
      });
 
 
@@ -103,13 +171,18 @@ $(document).ready(function() {
     //click on calc signs and process calculation
     $('#plus').on('click', function () {
         empty();
+        $('#plus').addClass('red');
         result.push('+');
+
         $('#input').html(result);
+
         calculation();
+
     });
 
     $('#minus').on('click', function () {
         empty();
+          $('#minus').addClass('red');
         result.push('-');
         $('#input').html(result);
         calculation();
@@ -118,6 +191,7 @@ $(document).ready(function() {
 
     $('#divide').on('click', function () {
         empty();
+          $('#divide').addClass('red');
         result.push('/');
         $('#input').html(result);
         calculation();
@@ -125,12 +199,14 @@ $(document).ready(function() {
 
     $('#mult').on('click', function () {
         empty();
+          $('#mult').addClass('red');
         result.push('*');
         $('#input').html(result);
         calculation();
     });
       $('#percentage').on('click', function () {
         empty();
+        $('#percentage').addClass('red');
         result.push('%');
         $('#input').html(result);
         calculation();
